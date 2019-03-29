@@ -124,25 +124,6 @@ def brute_force_cow_transport(cows,limit=10):
     current_best = None
     current_length = len(cow_data)
 
-    # for iti in get_partitions(cow_data):
-    #
-    #     for i in range(0, len(iti)):
-    #
-    #         trip_val = [cow_data.get(cow) for cow in iti[i]]
-    #         if sum(trip_val) <= limit:
-    #             if i == len(iti) - 1:
-    #                 if len(iti) < current_length:
-    #                     current_length = len(iti)
-    #                     current_best = iti
-    #                 else:
-    #                     continue
-    #             else:
-    #                 continue
-    #         else:
-    #             break
-    #
-    # return current_best
-
     for iti in get_partitions(cow_data):
 
         if len(iti) <= current_length:
